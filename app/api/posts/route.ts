@@ -1,11 +1,10 @@
 import path from 'path';
 import { promises as fs } from 'fs';
-import { NextApiRequest, NextApiResponse } from "next/types";
-import { NextResponse } from 'next/server';
+import { NextApiResponse } from "next/types";
+import { NextRequest, NextResponse } from 'next/server';
 import { BlogPosts } from '@/types/posts';
 
-//@ts-ignore
-export async function GET(req: NextApiRequest, res: NextApiResponse) {
+export async function GET(req: Request | NextRequest, res: NextApiResponse) {
   //@ts-ignore
   const url = new URL(req.url)
 
