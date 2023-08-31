@@ -15,7 +15,7 @@ While the current version of the application is functional and meets the specifi
 - **Code Organization**: The codebase could benefit from a clearer structure by splitting components into `shared` and `ui` folders.
 - **Component Optimization**: Introducing more functional components and custom hooks can improve the app's reusability and performance.
 - **Search & Category Logic**: The logic for search and category filtering can be refined further to provide a smoother user experience.
-- **SSR or ISR pages**: Potentially pages could be done with ISR, dynamic  routing but, and dynamic metadata.
+- **SSR or ISR pages**: Potentially pages could be done with ISR, dynamic routing and dynamic metadata.
 
 However, as of now, the application serves its purpose effectively and provides a solid foundation for further enhancements.
 
