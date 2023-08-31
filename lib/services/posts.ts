@@ -1,6 +1,4 @@
-
-// could be env variable
-const BASE_URL = "http://localhost:3000"
+const API_HOST = process.env.NEXT_PUBLIC_API_HOST || "http://localhost:3000";
 
 /// Posts ///
 export const getPosts = async ({
@@ -15,7 +13,7 @@ export const getPosts = async ({
   limit: number
 }) => {
   try {
-    const response = await fetch(`${BASE_URL}/api/posts?q=${query || ''}&page=${page}&limit=${limit}&category=${category || ''}`);
+    const response = await fetch(`${API_HOST}/api/posts?q=${query || ''}&page=${page}&limit=${limit}&category=${category || ''}`);
 
     await sleep(800)
 
